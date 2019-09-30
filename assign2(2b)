@@ -1,0 +1,16 @@
+t=[-10:1:10]
+w=pi/10;
+x=1+1.5*cos(2*w*t)-0.6*cos(4*w*t)
+figure(1);
+hold on;
+subplot(2,2,1)
+plot(t,x)
+hold on;
+
+n=[-10:1:10]
+x=1+1.5*cos(2*w*t)-0.6*cos(4*w*t)+3*cos(n*pi/10)
+figure(1)
+hold on;
+subplot(2,2,2)
+plot(t,x)
+hold off;
